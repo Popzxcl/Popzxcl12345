@@ -1,0 +1,63 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/TnBz9vvr"))()
+local Window = Library.CreateLib("Popzxcl HUB", "DarkTheme")
+
+local Tab = Window:NewTab("หน้าแรก")
+local Section = Tab:NewSection("วาป")
+
+Section:NewButton("แผนที่ 1", "1", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-542.7153930664062, 144.25399780273438, 1146.55224609375)
+end)
+Section:NewButton("แผนที่ 2", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-942.5064697265625, 191.18748474121094, 746.9546508789062)
+end)
+Section:NewButton("แผนที่ 3", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1027.588134765625, 226.60916137695312, 1209.8843994140625)
+end)
+Section:NewButton("แผนที่ 4", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1181.1217041015625, 163.4312286376953, 177.7822723388672)
+end)
+Section:NewButton("แผนที่ 5", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1123.5863037109375, 158.94570922851562, -396.25323486328125)
+end)
+Section:NewButton("แผนที่ 6", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(150.37745666503906, 194.76844787597656, -385.710205078125)
+end)
+Section:NewButton("แผนที่ 7", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(965.1834106445312, 152.21078491210938, -70.88650512695312)
+end)
+Section:NewButton("แผนที่ 8", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1029.7928466796875, 210.94224548339844, -923.9384765625)
+end)
+Section:NewButton("แผนที่ 9", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-244.70751953125, 178.83677673339844, -981.4437255859375)
+end)
+Section:NewButton("แผนที่ 10", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-478.98101806640625, 179.0167694091797, -214.0573272705078)
+end)
+
+local VIP = Instance.new("ScreenGui")
+local KK = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+
+
+VIP.Name = "VIP"
+VIP.Parent = game.CoreGui
+VIP.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+
+KK.Name = "KK"
+KK.Parent = VIP
+KK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KK.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KK.BorderSizePixel = 0
+KK.Position = UDim2.new(0.0857338831, 0, 0.0989974961, 0)
+KK.Size = UDim2.new(0, 50, 0, 50)
+KK.Font = Enum.Font.SourceSans
+KK.Text = "UI"
+KK.TextColor3 = Color3.fromRGB(0, 0, 0)
+KK.TextSize = 14.000
+KK.Draggable = true
+KK.MouseButton1Click:Connect(function()
+game.CoreGui:FindFirstChild("1").Enabled = not game.CoreGui:FindFirstChild("1").Enabled
+end )
+UICorner.Parent = KK
